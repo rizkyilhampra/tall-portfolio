@@ -1,13 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-        "./resources/views/**/*.blade.php",
-        "./resources/js/**/*.vue",
-        "./resources/js/**/*.js",
-    ],
+    "./resources/views/**/*.blade.php",
+    "./resources/js/**/*.js",
+  ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'geist': ['Geist', 'sans-serif'],
+        'poppins': ['Poppins', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
-}
-
+};
